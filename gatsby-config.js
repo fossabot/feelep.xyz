@@ -1,7 +1,14 @@
-const { CONTENTFUL_SPACE_ID, CONTENTFUL_ACCESS_TOKEN } = process.env;
+const {
+  CONTENTFUL_SPACE_ID,
+  CONTENTFUL_ACCESS_TOKEN_PRODUCTION,
+  CONTENTFUL_ACCESS_TOKEN_PREVIEW,
+  CONTEXT
+} = process.env;
 
-console.log('CONTENTFUL_SPACE_ID', CONTENTFUL_SPACE_ID);
-console.log('CONTENTFUL_ACCESS_TOKEN', CONTENTFUL_ACCESS_TOKEN);
+// Use Contentful preview locally and for Netlify branch deploys
+const isProduction = CONTEXT === 'production';
+const CONTENTFUL_HOST = isProduction ? null : 'preview.contentful.com';
+const CONTENTFUL_ACCESS_TOKEN = isProduction ? CONTENTFUL_ACCESS_TOKEN_PRODUCTION : CONTENTFUL_ACCESS_TOKEN_PREVIEW;
 
 module.exports = {
   siteMetadata: {
@@ -16,7 +23,7 @@ module.exports = {
       options: {
         spaceId: CONTENTFUL_SPACE_ID,
         accessToken: CONTENTFUL_ACCESS_TOKEN,
-        host: `preview.contentful.com`,
+        host: CONTENTFUL_HOST,
       },
     },
     { resolve: 'gatsby-transformer-remark' },
