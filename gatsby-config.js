@@ -1,5 +1,8 @@
 const { CONTENTFUL_SPACE_ID, CONTENTFUL_ACCESS_TOKEN } = process.env;
 
+console.log('CONTENTFUL_SPACE_ID', CONTENTFUL_SPACE_ID);
+console.log('CONTENTFUL_ACCESS_TOKEN', CONTENTFUL_ACCESS_TOKEN);
+
 module.exports = {
   siteMetadata: {
     title: `feelep.xyz`,
