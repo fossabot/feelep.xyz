@@ -29,6 +29,7 @@ module.exports = class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+          <link rel="preload" href="/inter-font/Inter-UI-Regular.woff2?v=2.3" as="font">
           {this.props.headComponents}
           {css}
         </head>
