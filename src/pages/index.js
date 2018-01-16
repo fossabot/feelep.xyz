@@ -1,12 +1,15 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <h2 className='heroIntro'>software engineer & product designer</h2>
+    <h1 className='heroTitle'>i've built web products and helped people grow</h1>
+    <h1 className='heroTitle'>exploring ideas around how we think, feel, act, live, work and play together</h1>
+    <p className='footer'>
+      <a href='https://www.linkedin.com/in/feelepxyz/'>linkedin</a>
+      <span>&nbsp;-&nbsp;</span>
+      <a href='https://github.com/feelepxyz'>github</a>
+    </p>
   </div>
 )
 

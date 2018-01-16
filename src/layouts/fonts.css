@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: optional;
+  src: url("/inter-font/Inter-UI-Regular.woff2?v=2.3") format("woff2"),
+       url("/inter-font/Inter-UI-Regular.woff?v=2.3") format("woff");
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
