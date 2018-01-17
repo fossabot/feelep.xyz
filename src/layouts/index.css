@@ -1,44 +1,52 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Inter UI', sans-serif;
+  font-size: 62.5%;
+  line-height: 1.3;
+  color: rgb(80, 80, 80);
+  background-color: rgb(233, 233, 233);
 }
 
 a,
 a:visited {
-  color: black;
+  color: rgb(20, 20, 20);
 }
 
-.headerContainer,
+div, span {
+  box-sizing: border-box;
+  position: relative;
+  border: 0 solid black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+body > * {
+  position: absolute;
+}
+
 .pageContainer {
-  margin: 0 auto;
-  max-width: 540px;
-  padding: 0 1rem 1.5rem;
-}
-
-.headerContainer {
-  padding-top: 1rem;
-  padding-bottom: 0;
-}
-
-.headerTitle {
-  font-family: 'Inter UI', sans-serif;
-  font-size: 13px;
-}
-
-.heroIntro {
-  font-family: 'Inter UI', sans-serif;
-  font-weight: 400;
-  font-size: 25px;
+  max-width: 500px;
+  padding: 0.8rem 1.5rem;
 }
 
 .heroTitle {
-  font-family: 'Inter UI', sans-serif;
   font-weight: 400;
-  font-size: 35px;
+  font-size: 1.7rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
 .footer {
-  font-family: 'Inter UI', sans-serif;
   font-weight: 400;
-  font-size: 13px;
-  color: #000;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer__link {
+  margin-bottom: 0.5rem;
 }

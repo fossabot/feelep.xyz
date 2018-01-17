@@ -6,21 +6,11 @@ import Helmet from 'react-helmet'
 import 'normalize.css'
 import './index.css'
 
-const Header = () => (
-  <div className='headerContainer'>
-    <p className='headerTitle'>philip harrison ± philip[at]mailharrison.com</p>
-  </div>
-)
-
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title='philip harrison'
-      meta={[
-        { name: 'description', content: '' },
-      ]}
+    title='philip harrison @feelepxyz'
     />
-    <Header />
     <div className='pageContainer'>
       {children()}
     </div>

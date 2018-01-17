@@ -15,13 +15,13 @@ module.exports = class HTML extends React.Component {
     if (process.env.NODE_ENV === `production`) {
       css = (
         <style
-          id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: stylesStr }}
+        id="gatsby-inlined-css"
+        dangerouslySetInnerHTML={{ __html: stylesStr }}
         />
       )
     }
     return (
-      <html {...this.props.htmlAttributes}>
+      <html {...this.props.htmlAttributes} lang='en'>
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
