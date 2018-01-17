@@ -49,4 +49,5 @@ body > * {
 
 .footer__link {
   margin-bottom: 0.5rem;
+  align-items: start;
 }
