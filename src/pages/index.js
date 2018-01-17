@@ -18,7 +18,7 @@ const ObfuscatedMailTo = (props) => {
 
 const IndexPage = () => (
   <div>
-    <h1 className='heroTitle'>👋 i'm philip harrison, a software engineer based in stockholm.</h1>
+    <h1 className='heroTitle'>👋 i'm philip harrison, a software engineer living in stockholm.</h1>
     <h1 className='heroTitle'>recently built web products and helped people grow at <a href="https://gocardless.com">gocardless</a>.</h1>
     <h1 className='heroTitle'>interested in how we live, work and play together.</h1>
     <div className='footer'>
