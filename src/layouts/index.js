@@ -6,12 +6,17 @@ import Helmet from 'react-helmet'
 import 'normalize.css'
 import './index.css'
 
+const pageContainer = {
+  maxWidth: '500px',
+  padding: '1rem 1.5rem',
+};
+
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
     title='philip harrison @feelepxyz'
     />
-    <div className='pageContainer'>
+    <div style={pageContainer}>
       {children()}
     </div>
   </div>

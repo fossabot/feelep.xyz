@@ -28,26 +28,16 @@ body > * {
   position: absolute;
 }
 
-.pageContainer {
-  max-width: 500px;
-  padding: 0.8rem 1.5rem;
-}
-
-.heroTitle {
+h1 {
   font-weight: 400;
   font-size: 1.7rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
-.footer {
+p, ul {
   font-weight: 400;
   font-size: 1rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
-}
-
-.footer__link {
-  margin-bottom: 0.5rem;
-  align-items: start;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
 }
