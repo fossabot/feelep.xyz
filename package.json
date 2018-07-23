@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Philip Harrison <philip@mailharrison.com>",
   "dependencies": {
-    "gatsby": "^1.9.256",
+    "gatsby": "^1.9.277",
     "gatsby-image": "^1.0.48",
     "gatsby-link": "^1.6.44",
     "gatsby-plugin-netlify": "^1.0.19",
